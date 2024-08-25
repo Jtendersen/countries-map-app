@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import Search from "./Search";
 import { ExtendedCountry } from "@/types/countries";
-import LeafletMap from "./LeafletMap";
+
+const LeafletMap = dynamic(() => import("./LeafletMap"), { ssr: false });
 
 const MapWithSearch = ({ countries }: { countries: ExtendedCountry[] }) => {
   const [filteredCountries, setFilteredCountries] = useState(countries);
