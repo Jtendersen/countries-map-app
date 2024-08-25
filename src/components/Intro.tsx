@@ -12,8 +12,8 @@ const IntroScreen = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="intro-content p-8 rounded-lg shadow-lg text-center">
-        <h1 className="text-white text-lg md:text-3xl font-bold mb-4">
+      <div className="intro-content p-4 md:p-8 rounded-lg shadow-lg text-center max-w-xs md:max-w-lg">
+        <h1 className="text-white text-lg md:text-3xl font-bold mb-2 md:mb-4">
           Welcome to the Countries Map Application
         </h1>
         <div className="flex justify-center">
